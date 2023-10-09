@@ -544,3 +544,6 @@ h6,
 .img-desktop{
     width: 50%;
 }
+.bg-img-link{
+    background-image: url('../img/DesktopIcons.png');
+}
