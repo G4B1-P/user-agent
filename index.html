@@ -41,14 +41,16 @@
         // Mostrar el agente de usuario en la página
         document.write("<p>Agente de Usuario: " + userAgent + "</p>");
 
-        // Ejemplos de detección específica
-        if (userAgent.includes("Chrome")) {
-            document.write("<p>Estás usando Google Chrome.</p>");
-        } else if (userAgent.includes("Firefox")) {
-            document.write("<p>Estás usando Mozilla Firefox.</p>");
-        } else if (userAgent.includes("Edge")) {
-            document.write("<p>Estás usando Microsoft Edge.</p>");
-        } else {
+        // Detectar si el usuario está utilizando iOS
+        if (/iPhone|iPad|iPod/.test(userAgent)) {
+            document.write("<p>Estás utilizando iOS.</p>");
+        }
+        
+        // Detectar si el usuario está utilizando Android
+        if (/Android/.test(userAgent)) {
+            document.write("<p>Estás utilizando Android.</p>");
+        }
+     else {
             document.write("<p>No se pudo detectar el navegador.</p>");
         }
     </script>
