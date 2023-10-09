@@ -34,52 +34,47 @@
 </head>
 
 <body>
-    <script>
-        // Obtener el agente de usuario del navegador
-        var userAgent = navigator.userAgent;
-
-        // Mostrar el agente de usuario en la página
-        document.write("<p>Agente de Usuario: " + userAgent + "</p>");
-
-        // Detectar si el usuario está utilizando iOS
-        if (/iPhone|iPad|iPod/.test(userAgent)) {
-            document.write("<p>Estás utilizando iOS.</p>");
-        }
-        
-        // Detectar si el usuario está utilizando Android
-        if (/Android/.test(userAgent)) {
-            document.write("<p>Estás utilizando Android.</p>");
-        }
-     else {
-            document.write("<p>No se pudo detectar el navegador.</p>");
-        }
-    </script>
-
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid mt-10 p-5">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="about-img">
-                        <img class="img-fluid" src="img/about-img.jpg">
+                    <div class="col-md-3 col-lg-5 col-xl-5	col-xxl-10">
+                        <img class="img-fluid" src="img/LogoSB0.png">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="mb-4">We Make Your Business Smarter with Artificial Intelligence</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor eirmod magna dolore erat amet</p>
-                    <p class="mb-4">Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no
-                        labore lorem sit. Sanctus clita duo justo et tempor.</p>
+                    <h1 class="mb-4">SuperBoletos</h1>
+                    <script>
+                        // Obtener el agente de usuario del navegador
+                        var userAgent = navigator.userAgent;
+
+                        // Detectar si el usuario está utilizando iOS
+                        var isiOS = /iPhone|iPad|iPod/.test(userAgent);
+
+                        // Detectar si el usuario está utilizando Android
+                        var isAndroid = /Android/.test(userAgent);
+
+                        if (isiOS){
+                            document.write("<button> app apple </button>")
+                        }
+                        if (isAndroid){
+                            document.write("<button>app android</button>")
+                        }
+                        else{
+                            document.write("<p>Descarga la app de SuperBoletos desde tu celular</p>")
+                        }
+
+                    </script>
                     <div class="row g-3">
                         <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Professional Staff</h6>
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Compra segura desde la app</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Envia boletos a tus amigos</h6>
                         </div>
                         <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>24/7 Support</h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
+                            <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Tus snacks favoritos en linea</h6>
+                            <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Gana puntos jugando</h6>
                         </div>
                     </div>
                 </div>
