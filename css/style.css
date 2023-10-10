@@ -4,6 +4,15 @@ body{
     background-size: cover;
 }
 
+@media (min-width: 0px) and (max-width: 720px){
+    body{
+        background-image: url('../img/FondoMobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+}
+
 h1,
 h2,
 h3,
@@ -30,7 +39,4 @@ h6,
 }
 .img-desktop{
     width: 50%;
-}
-.bg-img-link{
-    background-image: url('../img/DesktopIcons.png');
 }
